@@ -44,12 +44,19 @@ private:
 	bool mIsRunning;
 	
 	// Pong specific
-	// Direction of paddle
-	int mPaddleDir;
-	// Position of paddle
-	Vector2 mPaddlePos;
+	// Direction of P1 paddle
+	int mPaddleP1Dir;
+	// Direction of P2 paddle
+	int mPaddleP2Dir;
+	// Position of P1 paddle
+	Vector2 mP1PaddlePos;
+	// Position of P2 paddle
+	Vector2 mP2PaddlePos;
 	// Position of ball
 	Vector2 mBallPos;
 	// Velocity of ball
 	Vector2 mBallVel;
+	
+	// Game finish log
+	const char* GameOverMessage;
 };
